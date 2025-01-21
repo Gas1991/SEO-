@@ -3,9 +3,9 @@ import pandas as pd
 import pymongo
 
 # Connexion à MongoDB
-client = pymongo.MongoClient("mongodb://gas1991:jYUxFL03Fzw2v1P7@localhost:27017/")
-db = client["Tendances"]
-collection = db["Janvier"]
+client = pymongo.MongoClient("mongodb+srv://gas1991:gqsYfsbyCHfv2WjX@cluster0.9y1kj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+db = client["Janvier"]
+collection = db["Tendances"]
 
 # Chargement des données depuis MongoDB
 df = pd.DataFrame(list(collection.find()))
