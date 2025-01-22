@@ -33,9 +33,8 @@ def dashboard():
     with headerSection:
         st.title("Tendance Janvier 2025")
     with mainSection:
-        
-    with LeftNav:
-        st.text("hi")
+        with LeftNav:
+            st.text("hi")
 
     if st.button("sign out"):
         st.session_state.logged_in=False
