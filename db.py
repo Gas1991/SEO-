@@ -23,4 +23,4 @@ with col_1:
 with col_2:
     st.subheader("Top 100")
     st.divider()
-    st.bar_chart(top_df.set_index("Search term")["Event count"])
+    st.bar_chart(top_df.set_index("Mots clŽs sur Google")["Visites"])
