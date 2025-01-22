@@ -12,7 +12,7 @@ df = pd.DataFrame(list(collection.find()))
 df = df.drop(columns=["_id"], errors="ignore")  # Supprime la colonne `_id`
 
 # Trier les données et sélectionner les top résultats
-top_df = df.sort_values(by="Event count", ascending=False).head(100)  # Top 10 résultats
+top_df = df.sort_values(by="Mots clŽs sur Google", ascending=False).head(100)  # Top 10 résultats
 
 # Afficher le graphique
 col_1,col_2 = st.columns(2)
