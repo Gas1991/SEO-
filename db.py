@@ -9,6 +9,8 @@ LeftNav =st.sidebar
 loginSection = st.container()
 logOutSection= st.container()
 
+
+
 def login():
     with headerSection:
         col_1,col_2=st.columns([2,1])
@@ -31,10 +33,9 @@ def login():
 
 def dashboard():
     with headerSection:
-        st.title("Tendance Janvier 2025")
-    with mainSection:
-        with LeftNav:
-            st.text("hi")
+        st.title("Tendance Janvier 2025")        
+    with LeftNav:
+        st.text("hi")
 
     if st.button("sign out"):
         st.session_state.logged_in=False
